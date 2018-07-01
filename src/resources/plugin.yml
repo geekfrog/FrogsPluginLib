@@ -1,0 +1,9 @@
+name: ${project.name}
+version: 0.0.1-SNAPSHOT-b1001
+main: gg.frog.mc.base.PluginMain
+author:
+- GeekFrog
+description: ${project.description}
+softdepend:
+- SQLibrary
+- PlaceholderAPI
