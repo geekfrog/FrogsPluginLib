@@ -5,16 +5,9 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerKickEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 
-import gg.frog.mc.base.PluginMain;
 import gg.frog.mc.base.utils.data.PlayerData;
 
 public class BaseListener implements Listener {
-
-	private PluginMain pm;
-
-	public BaseListener(PluginMain pm) {
-		this.pm = pm;
-	}
 
 	@EventHandler
 	public void onQuit(PlayerQuitEvent event) {
