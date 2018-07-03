@@ -8,6 +8,9 @@
 ### 可选前置插件：
 ##### 前置插件PlaceholderAPI下载地址:[https://www.spigotmc.org/resources/placeholderapi.6245/](https://www.spigotmc.org/resources/placeholderapi.6245/)
 
+### 权限/命令/配置：
+无
+
 ### 依赖本前置的插件：
 ##### NameTags 基于权限的GUI称号系统.
 [https://github.com/geekfrog/NameTags](https://github.com/geekfrog/NameTags)
