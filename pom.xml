@@ -8,7 +8,7 @@
 	<version>0.0.3-SNAPSHOT-b1003</version>
 	<packaging>jar</packaging>
 	<name>FrogsPluginLib</name>
-	<description>宅蛙的插件前置库</description>
+	<description>宅宅蛙的插件前置库</description>
 	<organization>
 		<url>https://github.com/geekfrog</url>
 		<name>GeekFrog</name>

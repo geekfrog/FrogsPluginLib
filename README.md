@@ -1,5 +1,5 @@
 # FrogsPluginLib
-### 宅蛙的插件前置库
+### 宅宅蛙的插件前置库
 ##### FrogsPluginLib插件下载地址:[https://ci.frog.gg/job/FrogsPluginLib/](https://ci.frog.gg/job/FrogsPluginLib/)
 
 ### SQLibrary前置插件已包含在FrogsPluginLib插件内，无需下载。
