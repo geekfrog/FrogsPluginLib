@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>gg.frog.mc</groupId>
 	<artifactId>base</artifactId>
-	<version>0.0.1-SNAPSHOT-b1001</version>
+	<version>0.0.3-SNAPSHOT-b1003</version>
 	<packaging>jar</packaging>
 	<name>FrogsPluginLib</name>
 	<description>宅蛙的插件前置库</description>

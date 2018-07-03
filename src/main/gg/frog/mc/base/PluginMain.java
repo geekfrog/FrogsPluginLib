@@ -80,7 +80,7 @@ public class PluginMain extends PluginBase {
 	 * 这里可以注册多个
 	 */
 	private void registerListeners() {
-		pm.getServer().getPluginManager().registerEvents(new BaseListener(), pm);
+		pm.getServer().getPluginManager().registerEvents(new BaseListener(pm), pm);
 	}
 
 	/**

@@ -26,6 +26,10 @@ public class PlayerData {
 		return OFFLINE_PLAYER_MAP;
 	}
 
+	public static Map<String, String> getPLAYER_UUID_MAP() {
+		return PLAYER_UUID_MAP;
+	}
+
 	public static OfflinePlayer getOfflinePlayer(String name) {
 		if (name != null) {
 			OfflinePlayer p = OFFLINE_PLAYER_MAP.get(name);
@@ -58,16 +62,14 @@ public class PlayerData {
 			if (uuid != null) {
 				return uuid;
 			} else {
-				if (pb != null)
-					for (OfflinePlayer p : pb.getServer().getOfflinePlayers()) {
-						if (p == null)
-							continue;
-						if (p.getName().equalsIgnoreCase(name)) {
-							uuid = p.getUniqueId().toString();
-							PLAYER_UUID_MAP.put(name, uuid);
-							return uuid;
-						}
+				if (pb != null) {
+					OfflinePlayer p = getOfflinePlayer(name);
+					if (p != null) {
+						uuid = p.getUniqueId().toString();
+						PLAYER_UUID_MAP.put(name, uuid);
+						return uuid;
 					}
+				}
 			}
 		}
 		return null;

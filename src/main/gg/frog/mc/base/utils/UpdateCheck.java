@@ -28,12 +28,12 @@ public class UpdateCheck implements Runnable {
 			YamlConfiguration tempConfig = YamlConfiguration.loadConfiguration(new InputStreamReader(connection.getInputStream(), Charsets.UTF_8));
 			String version = tempConfig.getString("version", pb.PLUGIN_VERSION);
 			if (!pb.PLUGIN_VERSION.equals(version)) {
-				pb.getServer().getConsoleSender().sendMessage(StrUtil.messageFormat("§b[" + pb.PLUGIN_NAME + "] " + "§r§4There is a new version ''{0}'' of the plugin.", version));
+				pb.getServer().getConsoleSender().sendMessage(StrUtil.messageFormat("§b[§4" + pb.PLUGIN_NAME + "§b] " + "§4There is a new version ''{0}'' of the plugin.", version));
 			} else {
-				pb.getServer().getConsoleSender().sendMessage(StrUtil.messageFormat("§b[" + pb.PLUGIN_NAME + "] " + "§r§2No new version available."));
+				pb.getServer().getConsoleSender().sendMessage(StrUtil.messageFormat("§b[§4" + pb.PLUGIN_NAME + "§b] " + "§2No new version available."));
 			}
 		} catch (Exception e) {
-			pb.getServer().getConsoleSender().sendMessage(StrUtil.messageFormat("§b[" + pb.PLUGIN_NAME + "] " + "§r§4Can't check new version."));
+			pb.getServer().getConsoleSender().sendMessage(StrUtil.messageFormat("§b[§4" + pb.PLUGIN_NAME + "§b] " + "§4Can't check new version."));
 		}
 	}
 }
