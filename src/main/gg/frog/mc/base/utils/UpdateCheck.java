@@ -26,9 +26,9 @@ public class UpdateCheck implements Runnable {
 			connection.setRequestProperty("User-Agent", "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.4; en-US; rv:1.9.2.2) Gecko/20100316 Firefox/3.6.2");
 			connection.setRequestMethod("GET");
 			YamlConfiguration tempConfig = YamlConfiguration.loadConfiguration(new InputStreamReader(connection.getInputStream(), Charsets.UTF_8));
-			String version = tempConfig.getString("version", pb.PLUGIN_VERSION);
+			String version = tempConfig.getString("version", "Unknown version");
 			if (!pb.PLUGIN_VERSION.equals(version)) {
-				pb.getServer().getConsoleSender().sendMessage(StrUtil.messageFormat("§b[§4" + pb.PLUGIN_NAME + "§b] " + "§4There is a new version ''{0}'' of the plugin.", version));
+				pb.getServer().getConsoleSender().sendMessage(StrUtil.messageFormat("§b[§4" + pb.PLUGIN_NAME + "§b] " + "§eFound a new version ''{0}''. (Yours: ''{1}'')", version, pb.PLUGIN_VERSION));
 			} else {
 				pb.getServer().getConsoleSender().sendMessage(StrUtil.messageFormat("§b[§4" + pb.PLUGIN_NAME + "§b] " + "§2No new version available."));
 			}

@@ -152,6 +152,7 @@ public abstract class PluginConfig {
 			config = tempConfig;
 		} catch (FileNotFoundException e) {
 		} catch (IOException | InvalidConfigurationException e1) {
+			pb.getServer().getConsoleSender().sendMessage(StrUtil.messageFormat("§b[§4" + pb.PLUGIN_NAME + "§b] " + "§4Read file error of ''{0}''.", configFile.getAbsolutePath()));
 			tempConfig = null;
 			e1.printStackTrace();
 		}

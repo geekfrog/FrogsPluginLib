@@ -25,10 +25,22 @@
 [/color][/quote]
 [/td][/tr]
 [/table][/align][align=center][table=98%,#4169e1]
+[tr][td][align=center][size=6][color=#ffffff][b]功能/特性[/b][/color][/size][/align][/td][/tr]
+[/table][/align][align=center][table=98%,gray]
+[tr][td][size=4][color=#ffffff][b][list]
+[*]PlayerData(玩家数据) 缓存了玩家名字与uuid和名字与OfflinePlayer的对应关系
+[*]utils.config 配置文件读写相关的工具类
+[*]utils.nms 物品附魔发光、显示玩家头
+[*]FileUtil 将插件内的文件复制到指定位置、简单写文本文件
+[*]StrUtil 提供了将颜色代码&及PlaceholderAPI变量转换的功能
+[*]UpdateCheck 提供了插件版本检测的功能. 通过检查远程plugin.yml设置的版本号与当前版本是否一致判断是否有新版本.
+[*]PluginBase 插件main类需要继承PluginBase类才能使用UpdateCheck等功能.
+[*]等等...
+[/list][/b][/color][/size][/td][/tr]
+[/table][/align][align=center][table=98%,#4169e1]
 [tr][td][align=center][size=6][color=#ffffff][b]插件权限/命令/配置[/b][/color][/size][/align][/td][/tr]
 [/table][/align][align=center][table=98%,gray]
 [tr][td][color=#ff0000][b]无[/b][/color][/td][/tr]
-[/table][/align][align=center][table=98%,#4169e1]
 [tr][td][align=center][size=6][color=#ffffff][b]更新日志[/b][/color][/size][/align][/td][/tr]
 [/table][/align][align=center][table=98%,gray]
 [tr][td][spoiler][size=4][b][url=http://ci.frog.gg/jenkins/job/FrogsPluginLib/changes]详细的更新记录[/url]

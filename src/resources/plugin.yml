@@ -1,5 +1,5 @@
 name: ${project.name}
-version: 0.0.3-SNAPSHOT-b1003
+version: 0.0.4-SNAPSHOT-b1004
 main: gg.frog.mc.base.PluginMain
 author:
 - GeekFrog
