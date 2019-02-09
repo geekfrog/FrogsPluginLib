@@ -18,9 +18,9 @@ public class StrUtil {
 	}
 
 	public static String messageFormat(Player player, String src, Object... args) {
-		String message = MessageFormat.format(src, args).replaceAll("&", "§").replaceAll("\\\\n", "\n").replaceAll("%player%", player.getPlayer().getDisplayName());
+		String message = MessageFormat.format(src, args).replaceAll("&", "§").replaceAll("\\\\n", "\n").replaceAll("%player%", player.getPlayer().getDisplayName()).replaceAll("%player_name%", player.getPlayer().getName());
 		if (PluginMain.enabledPlaceholder) {
-			message = PlaceholderAPI.setPlaceholders(player, message);
+			message = PlaceholderAPI.setPlaceholders(player, message, PlaceholderAPI.getPlaceholderPattern());
 		}
 		return message;
 	}
